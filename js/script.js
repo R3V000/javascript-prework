@@ -29,3 +29,20 @@ if(playerInput == '1'){
 } else if (playerInput == '3'){
     playerMove = 'nożyce';
 }
+
+printMessage('Twój ruch to: ' + playerMove);
+
+
+if (computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+}else if (playerInput == randomNumber){
+    printMessage('Remis!');
+}else if (computerMove == 'papier' && playerMove == 'nożyce'){
+    printMessage('Ty wygrywasz!');
+}else if (computerMove == 'nożyce' && playerMove == 'kamień'){
+    printMessage('Ty wygrywasz!');
+}else if(playerMove == 'nieznany ruch'){
+    printMessage('Wpisałeś niepoprawną liczbę, nie liczy się!')
+}else{
+    printMessage('Przegrałeś!');
+}
